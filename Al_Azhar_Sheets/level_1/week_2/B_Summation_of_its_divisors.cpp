@@ -15,9 +15,9 @@ using namespace std;
  * @param n The integer whose divisors' sum is to be calculated.
  * @return The sum of all divisors of n.
  */
-int getSumofDivisors(int n) {
-    int sum = 0;
-    for (int i = 1; i * i <= n; i++) {
+ll getSumofDivisors(ll n) {
+    ll sum = 0;
+    for (ll i = 1; i * i <= n; i++) {
         if (n % i == 0) {
             sum += i;
             if (i != n / i) {
@@ -30,9 +30,9 @@ int getSumofDivisors(int n) {
 }
 
 void solve(void) {
-    int n;
+    ll n;
     cin >> n;
-    int sum = getSumofDivisors(n);
+    ll sum = getSumofDivisors(n);
     cout << sum << endl;
 }
 
