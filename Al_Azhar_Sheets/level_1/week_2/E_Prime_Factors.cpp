@@ -29,7 +29,6 @@ void getPrimeFactors(ll n)
     {
         PrimeFact[n]++;
     }
-
     for (auto &[prime, power] : PrimeFact)
     {
         cout << prime << " " << power << endl;
